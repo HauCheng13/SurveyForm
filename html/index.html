@@ -1,0 +1,139 @@
+ 
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="UTF-8">
+    <title>NBA Survey</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <header>
+      <img id="logo" alt="NBA Logo" src="https://w0.peakpx.com/wallpaper/115/957/HD-wallpaper-nba-logo-nba-logo-basket-ball.jpg"/>
+      <h1 id="title">NBA Survey Form</h1>
+      <nav>
+        <ul>
+        <li><a href="#info">INFO</a></li>
+        <li><a href="#questions">QNS</a></li> 
+        </ul>
+      </nav>
+    </header>
+    <h2 id="info"><em>Please fill out your particulars </em></h2>
+    <p class="sr-only" id ="description">NBA SURVEY FORM!</p>
+    
+    <form method="post" action='https://register-NBASURVEYFORM.org' id="survey-form">
+    <div>
+    <fieldset id = "input">
+      <label for="name" id="name-label"> Name: </label>    
+      <input id="name" type="text" name="name" required placeholder = "Enter your name">
+      <label for="email" id="email-label">  Email: </label>
+      <input id="email" type="email" name="email" required placeholder = "Enter your email">
+      <label for="number" id="number-label"> Age: </label>
+      <input id="number" type="number" min="12" max="120" name="number" required placeholder = "Input your age">
+      <label for="new-password" id="password-label"> Password: </label>
+      <input id="new-password" type="password"  pattern="[a-z0-5]{8,}" name="new-password" required placeholder = "Create a new password">
+    </fieldset>
+    </div>
+    <div>
+    <h2 class="q1" id="questions"><em>Questions </em></h2>  
+    <fieldset class="fieldset2">
+      <legend><strong>Q1) How do you usually watch NBA games? (Check all that apply)</strong></legend>
+      <div class="specific">
+       <label for="arena">
+         <input id="arena" name="watch" value="arena" type="checkbox"> <span>Live in the arena</span> 
+       </label>
+       <label for="youtube">
+         <input id="youtube" name="watch" value="youtube" type="checkbox"> <span> YouTube</span> 
+       </label>
+       <label for="tv">
+         <input id="tv" name="watch" value="tv" type="checkbox"> <span>On Television/TV broadcasts</span> 
+       </label>
+       <label for="streaming">
+         <input id="streaming" name="watch" value="streaming" type="checkbox"> <span>Streaming Services(e.g Streameast)</span> 
+       </label>
+       </div>      
+    </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend class="question2lol"><strong>Q2) How many NBA games do you watch per week?</strong></legend>
+        <ul class="answers-list">
+          <li>
+            <label for="q2-a1"><input type="radio" id ="q2-a1" name="q2" value="1-2"> 1-2 games
+             </label> 
+          </li>
+          <li>
+            <label for="q2-a2"><input type="radio" id ="q2-a2" name="q2" value="3-5"> 3-5 games
+             </label> 
+          </li>
+          <li>
+            <label for="q2-a3"><input type="radio" id ="q2-a3" name="q2" value="5+"> 5+ games
+             </label> 
+          </li>  
+        </ul>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset id="fs4">
+        <label for="dropdown" id="fs4label">
+          <strong>Q3) Which is your Favourite NBA Team?</strong>
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Boston Celtics</option>
+            <option value="2">Brooklyn Nets</option>
+            <option value="3">New York Knicks</option>
+            <option value="4">Philadelphia 76ers</option>
+            <option value="5">Toronto Raptors</option>
+            <option value="6">Chicago Bulls</option>
+            <option value="7">Cleveland Cavaliers</option>
+            <option value="8">Detroit Pistons</option>
+            <option value="9">Indiana Pacers</option>
+            <option value="10">Milwaukee Bucks</option>
+            <option value="11">Atlanta Hawks</option>
+            <option value="12">Charlotte Hornets</option>
+            <option value="13">Miami Heat</option>
+            <option value="14">Orlando Magic</option>
+            <option value="15">Washington Wizards</option>
+            <option value="16">Denver Nuggets</option>
+            <option value="17">Minnesota Timberwolves</option>
+            <option value="18">Oklahoma City Thunder</option>
+            <option value="19">Portland Trail Blazers</option>
+            <option value="20">Utah Jazz</option>
+            <option value="21">Golden State Warriors</option>
+            <option value="22">Los Angeles Clippers</option>
+            <option value="23">Los Angeles Lakers</option>
+            <option value="24">Phoenix Suns</option>
+            <option value="25">Sacramento Kings</option>
+            <option value="26">Dallas Mavericks</option>
+            <option value="27">Houston Rockets</option>
+            <option value="28">Memphis Grizzlies</option>
+            <option value="29">New Orleans Pelicans</option>
+            <option value="30">San Antonio Spurs</option>
+          </select>
+        </label>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset id="fs5">
+        <label for="textarea1" id="fs5label">
+          <strong>Q4) Why is this team your favourite?</strong>
+          <textarea id="textarea1" name="textarea1" rows="3" cols="30" placeholder="This team is my favourite team because...."></textarea>
+        </label>
+      </fieldset>
+    </div>
+    <div>
+      <button id="submit" type="submit" value="Submit" />Submit</button>
+    </div> 
+    </form>
+     <footer>
+        Done by: Wong Hau Cheng
+    </footer>
+  </body>
+</html>
+  
+    
+
+     
+    
+
+
+
